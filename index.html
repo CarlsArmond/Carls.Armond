@@ -16,9 +16,16 @@
     </style>
 </head>
 <body>
-    <video autoplay playsinline muted loop>
+    <video autoplay playsinline loop>
         <source src="death.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.querySelector('video');
+            video.volume = 1.0; // Define o volume para o máximo
+        });
+    </script>
 </body>
 </html>
